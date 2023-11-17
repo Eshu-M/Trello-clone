@@ -12,9 +12,8 @@ const fetchSuggestion=async(board:Board)=>{
         body:JSON.stringify(todos),
       });
      
-    const GPTdata = res;
-    console.log(GPTdata)
-    const  content =GPTdata;
-    return content;
+    const GPTdata = res.json();
+    
+    return GPTdata;
 }
 export default fetchSuggestion;

@@ -14,10 +14,10 @@ function Header() {
     ])
     const [loading, setLoading]=useState<boolean>(false);
     const [suggestion, setSuggestion]=useState<string>('');
-    useEffect(()=>{
-      if(board.columns.size===0) return;
+    // useEffect(()=>{
+    //   if(board.columns.size===0) return;
        
-      setLoading(true);
+    //   setLoading(true);
     //   const fetchSuggestionFunc=async()=>{
 
     //     const suggestion = await fetchSuggestion(board);
@@ -25,7 +25,7 @@ function Header() {
     //     setLoading(false);
     //   }
     //   fetchSuggestionFunc();
-    } , [board])
+    // } , [board])
   return (
     <header>
         <div className="flex flex-col md:flex-row items-center p-5 bg-gray-500/10 rounded-b-2xl">
